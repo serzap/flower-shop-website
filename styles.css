@@ -1,0 +1,122 @@
+body{
+	background-color: #f5e7e4;
+}
+
+.headerWrapper{
+	padding-top: 16.11%; 
+    background: url(images/header.png) no-repeat center top;
+    background-size: cover;  
+    position: relative;
+}
+
+.header {
+	position: absolute;
+  	padding: 50px 0 150px 0;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	margin-bottom: 25px;
+}
+
+/*Навигация*/
+
+.button, .button:visited{
+	background-color: rgba(177, 99, 163 , 0.7);
+	color: white;
+	width: 85px;
+	padding: 10px;
+	display: inline-block;
+	height: 35px;
+	text-align: center;
+	font-size: 15px;
+	border-radius: 5px;
+	line-height: 15px;
+	transition: 0.2s all;
+
+}
+
+.button:hover{
+	background-color: rgba(236, 161, 166, 0.7);
+	color: white;
+	text-decoration: none;
+}
+
+.button:active{
+	background-color: rgba(221, 85, 92, 0.5);
+	color: white;
+	text-decoration: none;
+}
+
+.button:focus{
+	background-color: rgba(119, 59, 107 , 0.8);
+	color: white;
+	text-decoration: none;
+}
+
+/*Лого*/
+
+.logoWrapper{
+	position: relative;
+	width: 270px;
+	margin: auto;
+}
+
+.logo{
+	position: absolute;
+	margin-top: -55px;
+}
+.logo img{
+	width: 270px;
+}
+
+/*Контакты*/
+
+.socNav{
+	position:relative; 	
+}
+
+.socNav ul{
+	list-style-type: none;
+}
+
+.socNav a {
+ 	color: #6c085c;
+ 	font-size: 15px;
+ 	text-decoration: none;
+ 	padding: 10px 5px 10px 40px;
+ 	display: block;
+ 	background-color: transparent;
+}
+
+.instLogo{
+	background-image: url(images/insta.png);
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+ 	background-position: 0 5px;
+}
+
+.vkLogo{
+	background-image: url(images/vk.png);
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+  	background-position: 0 5px;
+
+}
+
+.locLogo{
+	background-image: url(images/location.png);
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+ 	background-position: 0 5px;
+
+
+}
+
+.phoneLogo{
+	background-image: url(images/phone.png);
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+    background-position: 0 5px;
+
+}
