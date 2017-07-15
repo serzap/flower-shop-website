@@ -2,11 +2,14 @@ body{
 	background-color: #f5e7e4;
 }
 
+/*Хедер*/
+
 .headerWrapper{
 	padding-top: 16.11%; 
     background: url(images/header.png) no-repeat center top;
     background-size: cover;  
     position: relative;
+    margin-bottom: 75px;
 }
 
 .header {
@@ -120,3 +123,60 @@ body{
     background-position: 0 5px;
 
 }
+
+/*Галерея*/
+
+.imgWrapper{
+	position: relative;
+	margin: 10px	 auto;
+	width: 200px;
+	height: 200px;
+}
+.main .imgInfo {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #ddb5d3;	
+	padding: 20px;
+	font-family: Arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: 400;
+	font-weight: bold;
+	text-align: center;
+	color: #740167;
+	opacity: 0;
+	-webkit-transition: opacity .75s ease-out;
+	-moz-transition: opacity .75s ease-out;
+	-o-transition: opacity .75s ease-out;
+	transition: opacity .75s ease-out;
+}
+
+.imgWrapper:hover .imgInfo {
+	opacity: 0.8;	
+}
+
+/*Футер*/
+
+.footerWrapper{
+	padding-top: 17.35%; 
+    background: url(images/footer.png) no-repeat center bottom;
+    background-size: cover;  
+    position: relative;
+    margin-top: 55px;
+}
+
+.footer {
+	position: absolute;
+  	bottom: 0;
+  	right: 0;
+}
+.footer .copyright{
+	font-size: 20px;
+	font-weight: bold;
+	color: purple;	
+}
+
+
+
