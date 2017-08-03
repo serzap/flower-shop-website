@@ -11,6 +11,11 @@
 <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+
+<!-- Slick -->
+	<link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
 </head>
 <body>
 
@@ -19,14 +24,26 @@
 	<div class="header">
 		<div class="container">
 			<div class="row">
+
 				<div class="col-md-4">
-					<div class="nav">
-						<a class="button" href="#">О нас</a>
-						<a class="button" href="#">Оплата</a>
-						<a class="button" href="#">Доставка</a>
-						<a class="button" href="#">Контакты</a>
-					</div>
-				</div>
+					<div class="contactsNav">
+				  		<ul>
+					      	<li class="loc">
+						      	<a class="locLogo" href="https://www.google.com/maps/place/Starobazarnyi+Square,+1,+Odesa,+Odessa+Oblast,+Ukraine/@46.4738249,30.73208,17z/data=!3m1!4b1!4m5!3m4!1s0x40c631848c1634c7:0x1bedb736253c586a!8m2!3d46.4738249!4d30.7336276"  target="blank">
+						      	<span>
+						      	Цветочная галерея "Орхидея"
+						      	</span>
+						      	место 44
+						      	</a>
+					      	</li>
+					      	<li class="phone">
+						      	<a class="phoneLogo" href="#" target="blank">+380677316799
+						      	</a>
+					      	</li>
+				    	</ul>
+			    	</div>
+			    </div>
+
 				<div class="col-md-4">
 					<div class="logoWrapper">
 						<a href="#" class="logo">
@@ -35,8 +52,9 @@
 						</a>
 					</div>
 				</div>
+
 				<div class="col-md-4">
-				  	<div class="socNav">
+					<div class="socNav">
 				  		<ul>
 					      	<li class="inst">
 						      	<a class="instLogo" href="https://www.instagram.com/zefirflowers/" target="blank">zefirflowers
@@ -46,102 +64,182 @@
 						      	<a class="vkLogo" href="https://vk.com/zaporozhchenko77" target="blank">vk.com/zaporozhchenko77
 						      	</a>
 					      	</li>
-					      	<li class="loc">
-						      	<a class="locLogo" href="https://www.google.com/maps/place/Starobazarnyi+Square,+1,+Odesa,+Odessa+Oblast,+Ukraine/@46.4738249,30.73208,17z/data=!3m1!4b1!4m5!3m4!1s0x40c631848c1634c7:0x1bedb736253c586a!8m2!3d46.4738249!4d30.7336276"  target="blank">
-						      	Цветочная галерея "Орхидея" место 44
-						      	</a>
-					      	</li>
-					      	<li class="phone">
-						      	<a class="phoneLogo" href="#" target="blank">+380677316799
-						      	</a>
-					      	</li>
 				    	</ul>
-				  	</div>
-				</div>
+			    	</div>
+			    </div>
 			</div>
 		</div>
 	</div>
 </div>
 
-<!-- MAIN SECTION -->
-
-<div class="main">
+<!--  SECTION -->
+<div class="navPanelWrapper">
+	<div class="navPanel">
 	<div class="container">
-		<div class="row">
+	<div class="row">
+	<div class="col-md-12">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+						<span class=sr-only>Кнопка, для переключения навигации</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+				    </button>
+					<a class="navbar-brand" href="#">ZEFIR</a>
+			    </div>
 
-				<div class="col-md-3 col-sm-4 col-xs-12">
-					<div class="imgWrapper"> 
-						<img src="images/flower1.jpg" width="200" height="200">
-						<div class="imgInfo">
-							<p>Композиция 1</p>
+			    <!-- Главная навигация -->
+				<div class="collapse navbar-collapse" id="navbar-main">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">О нас<span class="sr-only">(текущая)</span></a>
+						</li>
+						<li>
+							<a href="#">Оплата</a>
+						</li>
+						<li>
+							<a href="#">Доставка</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+
+					 <!-- Форма поиска справа -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Искать цветы, букеты...">
 						</div>
+						<button type="submit" class="btn btn-default">Поиск</button>
+					</form>  
+					
+				</div>
+			</div>
+		</nav>
+		</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<!-- GALLERY -->
+
+<div class="container">
+	<div class="row">
+
+		<div class="main">
+
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<div class="imgWrapper"> 
+					<img src="images/flower1.jpg" width="200" height="200">
+					<div class="imgInfo">
+						<p>Композиция 1</p>
 					</div>
 				</div>
+			</div>
 
-				<div class="col-md-3 col-sm-4 col-xs-12">
-					<div class="imgWrapper"> 
-						<img src="images/flower1.jpg" width="200" height="200">
-						<div class="imgInfo">
-							<p>Композиция 1</p>
-						</div>
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<div class="imgWrapper"> 
+					<img src="images/flower1.jpg" width="200" height="200">
+					<div class="imgInfo">
+						<p>Композиция 1</p>
 					</div>
 				</div>
+			</div>
 
-				<div class="col-md-3 col-sm-4 col-xs-12">
-					<div class="imgWrapper"> 
-						<img src="images/flower1.jpg" width="200" height="200">
-						<div class="imgInfo">
-							<p>Композиция 1</p>
-						</div>
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<div class="imgWrapper"> 
+					<img src="images/flower1.jpg" width="200" height="200">
+					<div class="imgInfo">
+						<p>Композиция 1</p>
 					</div>
 				</div>
+			</div>
 
-				<div class="col-md-3 col-sm-4 col-xs-12">
-					<div class="imgWrapper"> 
-						<img src="images/flower1.jpg" width="200" height="200">
-						<div class="imgInfo">
-							<p>Композиция 1</p>
-						</div>
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<div class="imgWrapper"> 
+					<img src="images/flower1.jpg" width="200" height="200">
+					<div class="imgInfo">
+						<p>Композиция 1</p>
 					</div>
 				</div>
+			</div>
 
 				<div class="col-md-3 col-sm-4 col-xs-12">
-					<div class="imgWrapper"> 
-						<img src="images/flower1.jpg" width="200" height="200">
-						<div class="imgInfo">
-							<p>Композиция 1</p>
-						</div>
+				<div class="imgWrapper"> 
+					<img src="images/flower1.jpg" width="200" height="200">
+					<div class="imgInfo">
+						<p>Композиция 1</p>
 					</div>
 				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<div class="imgWrapper"> 
+					<img src="images/flower1.jpg" width="200" height="200">
+					<div class="imgInfo">
+						<p>Композиция 1</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<div class="imgWrapper"> 
+					<img src="images/flower1.jpg" width="200" height="200">
+					<div class="imgInfo">
+						<p>Композиция 1</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<div class="imgWrapper"> 
+					<img src="images/flower1.jpg" width="200" height="200">
+					<div class="imgInfo">
+						<p>Композиция 1</p>
+					</div>
+				</div>
+			</div>
 
 				<div class="col-md-3 col-sm-4 col-xs-12">
-					<div class="imgWrapper"> 
-						<img src="images/flower1.jpg" width="200" height="200">
-						<div class="imgInfo">
-							<p>Композиция 1</p>
-						</div>
+				<div class="imgWrapper"> 
+					<img src="images/flower1.jpg" width="200" height="200">
+					<div class="imgInfo">
+						<p>Композиция 1</p>
 					</div>
 				</div>
+			</div>
 
-				<div class="col-md-3 col-sm-4 col-xs-12">
-					<div class="imgWrapper"> 
-						<img src="images/flower1.jpg" width="200" height="200">
-						<div class="imgInfo">
-							<p>Композиция 1</p>
-						</div>
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<div class="imgWrapper"> 
+					<img src="images/flower1.jpg" width="200" height="200">
+					<div class="imgInfo">
+						<p>Композиция 1</p>
 					</div>
 				</div>
+			</div>
 
-				<div class="col-md-3 col-sm-4 col-xs-12">
-					<div class="imgWrapper"> 
-						<img src="images/flower1.jpg" width="200" height="200">
-						<div class="imgInfo">
-							<p>Композиция 1</p>
-						</div>
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<div class="imgWrapper"> 
+					<img src="images/flower1.jpg" width="200" height="200">
+					<div class="imgInfo">
+						<p>Композиция 1</p>
 					</div>
 				</div>
+			</div>
 
-		</div>	
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<div class="imgWrapper"> 
+					<img src="images/flower1.jpg" width="200" height="200">
+					<div class="imgInfo">
+						<p>Композиция 1</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
 	</div>
 </div>
 
@@ -160,5 +258,62 @@
 		</div>
 	</div>
 </div>
+
+
+<!-- SCRIPTS-->
+
+<!-- NAVIGATION -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<!-- GALLERY -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript" src="slick/slick/slick.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.main').slick({
+
+      	prevArrow:"<img class='a-left control-c prev slick-prev' src='images/left-arrow.png' width = '50' height = '50'>",
+      nextArrow:"<img class='a-right control-c next slick-next' src='images/right-arrow.png' width = '150' height = '150'>",
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  rows: 2,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+      });
+    });
+  </script>
 
 </body>
